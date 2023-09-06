@@ -1,0 +1,1 @@
+"""Protobuff for toDus auth"""

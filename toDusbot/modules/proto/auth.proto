@@ -1,0 +1,40 @@
+syntax = "proto2";
+
+package todusAuth;
+
+message reserve {
+    required string phone = 1;
+    required string id = 2;
+}
+
+message register {
+    required string phone = 1;
+    required string id = 2;
+    required string sms_token = 3;
+}
+
+message register_data {
+    required bytes uid = 1;
+
+    message profile {
+        required string phone = 1;
+        optional string displayName = 2;
+        optional string photoUrl = 3;
+        optional string info = 4;
+        optional string meh = 5;
+    }
+
+    required profile userProfile = 2;
+}
+
+message token {
+    required string phone = 1;
+    required bytes user_hash = 2;
+    required string compilation_ver = 3;
+}
+
+message token_data {
+    required int32 meh = 1;
+    required bytes token = 2;
+    required int32 expire = 3;
+}

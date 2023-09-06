@@ -1,0 +1,58 @@
+{
+  "name": "Todus Up Bot",
+  "description": "This is a telegram bot to upload files to toDus",
+  "keywords": [
+    "telegram",
+    "todus",
+    "downloader",
+    "telethon",
+    "bot",
+    "uploader"
+  ],
+  "stack": "container",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Make a bot from https://t.me/BotFather and enter the token here.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "ADMIN": {
+      "description": "The group telegram id",
+      "value": ""
+    },
+    "TODUS_VERSION": {
+      "description": "Todus Version",
+      "value": "",
+      "required": false
+    },
+    "COMPILATION_VERSION": {
+      "description": "Numero de Compilacion",
+      "value": "",
+      "required": false
+    },
+    "DATABASE_URL": {
+      "description": "Base de Datos",
+      "value": "postgresql://postgres:j0AsxmQQK6qXbg5BF8Wa@containers-us-west-5.railway.app:7510/railway",
+      "required": false
+    },
+    "STALKER": {
+      "description": "Para saber si le escriben al pv del bot set true or false",
+      "value": "True"
+    }
+  },
+  "addons": [],
+  "buildpacks": [],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
