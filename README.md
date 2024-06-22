@@ -21,16 +21,5 @@
     ADMIN=
     BOT_TOKEN=
     
-    
-## Tips
-
-UPSTREAM_REPO: Tu enlace al repositorio de github, si tu repositorio es privado añade con el sig formato https://username:{githubtoken}@github.com/{username}/{reponame} . Obten token desde el sig enlace [Github settings](https://github.com/settings/tokens). Así podrás actualizar tu bot desde el repositorio en cada reinicio sin necesidad de redeploy ## NOTA casos en los que es necesario hacer redeploy > cambios en el requirements.txt o en el Dockerfile
-
-Ejemplo de url con token para env var UPSTREAM_REPO  https://pedrito:gh_idsfhudddhdfhudfhduf@github.com/pedrito/repo-subesube
-
-UPSTREAM_BRANCH: aqui va main, master, dev o el name que le hallan puesto a la rama.
-
-forkear cada cual este repo no hacer deploy desde aqui ni usar el token de gh para halar el repo directo de la organizacion
-
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
