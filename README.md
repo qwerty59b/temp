@@ -20,8 +20,6 @@
     API_HASH=
     ADMIN=
     BOT_TOKEN=
-    UPSTREAM_REPO=
-    UPSTREAM_BRANCH=
     
     
 ## Tips
